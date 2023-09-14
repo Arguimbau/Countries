@@ -3,19 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .image-box{
-            border:solid;
-            display: inline-block;
-        }
-        .info-box {
-            border: solid;
-            display: inline-block;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1>Interactive SVG Map</h1>
+<h1 class="title">Interactive SVG Map</h1>
+<div id="container" class= "container">
 <div id="europe-map" class="image-box">
     <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
          id="svg2" height="654.76562" width="646.36719" version="1.1">
@@ -88,8 +80,7 @@
         </g>
     </svg>
 </div>
-<div id="fetch-info"></div>
-<div id="info-box" class="info-box" style.display="none">
+<div id="info-box" class="info-box">
     <div id="divflag" ><img id="imgflag"></div>
     <div id="divcountryname"></div>
     <div id="divun"></div>
@@ -98,6 +89,6 @@
     <div id="divborders"></div>
 </div>
 <script src="index.js"></script>
-
+</div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+}
+.image-box {
+    border: solid;
+    display: inline-block;
+    width: 45.5%;
+}
+
+.info-box {
+    border: solid;
+    width: 40%;
+    height: 20%;
+}
+.title{
+    text-align: center;
+}

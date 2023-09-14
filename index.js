@@ -7,6 +7,7 @@ divmap.onclick = (evt) => {
 
 divmap.onmouseover = (evt) => {
     evt.target.style.fill = "blue";
+    fetchAndDisplayCountryInfo(evt.target.id);
 };
 
 divmap.onmouseout = (evt) => {
@@ -35,7 +36,6 @@ async function fetchAndDisplayCountryInfo(countryId) {
         document.getElementById("divcurrencies").innerText = currencyList.join(" - ");
         document.getElementById("divcapital").innerText = `Capital: ${data.capital}`;
         document.getElementById("divborders").innerText = `Borders: ${data.borders}`;
-        document.getElementById("fetch-info").innerText = "Country information:";
         document.getElementById("info-box").style.display = "block";
     } catch (error) {
         if (error.apiError){
